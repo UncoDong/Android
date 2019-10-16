@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <GridLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/pen"
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:text="画笔" />
+
+        <Button
+            android:id="@+id/eraser"
+            android:layout_width="69dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:text="橡皮" />
+
+        <Button
+            android:id="@+id/clean"
+            android:layout_width="68dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:text="清空" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:text="👈" />
+
+        <Button
+            android:id="@+id/con"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="4"
+            android:text="👉" />
+
+    </GridLayout>
+
+    <SeekBar
+        android:id="@+id/color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progressDrawable="@xml/seekbar_bg" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/xi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:text="细" />
+
+        <SeekBar
+            android:id="@+id/width"
+            android:layout_width="358dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:progress="50" />
+
+        <TextView
+            android:id="@+id/cu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:text="粗" />
+
+    </LinearLayout>
+
+
+    <com.example.exp__drawlinesample.PaintView
+        android:id="@+id/_123"
+        android:layout_width="422dp"
+        android:layout_height="406dp"
+        android:background="#FFFFFF" />
+</LinearLayout>

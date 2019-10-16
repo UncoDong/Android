@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name = "music1">values/music1.wav </string>
+
+</resources>
